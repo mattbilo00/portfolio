@@ -9,6 +9,16 @@ html {
     Mobile: <450*/
 }
 
+h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
 /* -----Landing section----- */
 .landing_sec {
     display: grid;
@@ -84,13 +94,13 @@ html {
     line-height: normal;
 }
 
+
 .bttn_down {
     grid-row-start: 18;
     justify-self: center;
     /* floating animation to button */
     /* Add the click animation */
 }
-
 /* -----End of landing section----- */
 
 
@@ -98,7 +108,6 @@ html {
 .about_me_sec {
     display: grid;
     grid-template-rows: repeat(20, 1fr);
-    grid-template-columns: repeat(3, 1fr);
     grid-template-columns: 1fr 280px 1fr;
     height: 100vh;
 }
@@ -178,6 +187,27 @@ html {
 
 
 /* -----Project section----- */
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: auto;
+}
 
+.dbp_title {
+    grid-column: 6 / 12;
+
+}
+
+.dbp_desc {
+    grid-column: 6 / 15;
+    grid-row-start: 2;
+
+    font-size: 30px;
+    font-weight: thin;
+}
+
+.primary_colours_title {
+    
+}
 
 /* -----End of project section----- */
