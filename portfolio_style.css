@@ -1,0 +1,183 @@
+html {
+    color: #EFF1F6;
+    background-color: #32325D;
+    font-family: 'Jost';
+
+    /* Three resolution builds: 
+    Desktop: >=1000
+    Tablet: 450-1000
+    Mobile: <450*/
+}
+
+/* -----Landing section----- */
+.landing_sec {
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+    grid-auto-rows: 0;
+
+    background-image: url(Images/moons/Backgrounds_used/main_back_dt_moons.png);
+    background-repeat: no-repeat;
+    background-position: 10px 0px;
+    background-size: 100%;
+}
+
+.light1 {
+    height: 1717px;
+    width: 425px;
+    background: rgba(239, 241, 246, 0.20);
+    filter: blur(250px);
+    z-index: -1;
+    position: absolute;
+    top: -1300px;
+
+}
+
+.title {
+    justify-self: center;
+    align-self: center;
+    grid-row-start: 7;
+    margin: 0;
+
+    font-size: 96px;
+    font-weight: 600;
+}
+
+#intro_summary {
+    justify-self: center;
+    align-self: center;
+    grid-row-start: 8;
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: 200;
+}
+
+#button_container {
+    align-self: center;
+    justify-self: center;
+    grid-row-start: 11;
+}
+
+.resume_border {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    grid-row-start: 11;
+    align-self: center;
+    justify-self: center;
+}
+
+#resume_bttn {
+    width: 280px;
+    height: 80px;
+    border-width: 0;
+    border-radius: 30px;
+    background: linear-gradient(97deg, #8D8DCB -11.97%, #2F2F5B 120.59%);
+
+    color: #EFF1F6;
+    font-family: Jost;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bttn_down {
+    grid-row-start: 18;
+    justify-self: center;
+    /* floating animation to button */
+    /* Add the click animation */
+}
+
+/* -----End of landing section----- */
+
+
+/* -----About me section----- */
+.about_me_sec {
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 280px 1fr;
+    height: 100vh;
+}
+
+.light2 {
+    justify-self: center;
+    align-self: center;
+    
+    z-index: -1;
+
+    height: 33vh;
+    width: 33vw;
+    background: rgba(239, 241, 246, 0.15);
+    filter: blur(100px);
+    grid-row-start: 8;
+    grid-column-start: 2;
+}
+
+#about_me {
+    justify-self: center;
+    align-self: center;
+    grid-row-start: 8;
+    grid-column-start: 2;
+
+    z-index: 1;
+
+    text-align: left;
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.db2 {
+    grid-column-start: 2;
+}
+
+/* -----End of about me section----- */
+
+
+/* -----Link section----- */
+.link_container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.link_bbl {
+    --bbl_diameter: 120px;
+    height: var(--bbl_diameter);
+    width: var(--bbl_diameter);
+    border-radius: 50%;
+    position: relative;
+}
+
+.linkedin_link {
+    background: linear-gradient(rgba(132, 182, 224, 0.8), rgba(55, 57, 99, 1) 95%);
+}
+
+.email_link {
+    background: linear-gradient(rgba(153, 61, 96, 1), rgba(74, 63, 126, 1));
+}
+
+.github_link {
+    background: linear-gradient(rgba(242, 155, 124, 1), rgba(63, 33, 78, 0.6));
+}
+
+.link_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* -----End of link section----- */
+
+
+/* -----Project section----- */
+
+
+/* -----End of project section----- */
